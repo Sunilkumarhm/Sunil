@@ -1,0 +1,484 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adminpc.app_ui.StartScreen2"
+    >
+
+    <!--VISIBLIITY 1-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl1"
+        android:visibility="visible">
+
+
+    <TextView
+        android:text="What to Expect?"
+        android:layout_width="wrap_content"
+        android:id="@+id/find"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+                />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/find"
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#9933ff"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Terms:" android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/line"
+        android:id="@+id/term"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="- Minimum booking amount is Rs. 400"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/term"
+        android:id="@+id/term1"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="What to Expect from Beauty Service:"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/term1"
+        android:id="@+id/text1"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="- Service in the comfort of your house"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/text1"
+        android:id="@+id/text2"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="- High quality genuine products"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/text2"
+        android:id="@+id/text3"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnnext"
+        android:text="NEXT"
+        android:textColor="#ffffff"
+        android:background="#00cc00"
+        android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+
+    <!--VISIBLIITY 2-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl2"
+        android:visibility="invisible"
+        >
+    <TextView
+        android:text="What services are you looking for?"
+        android:layout_width="wrap_content"
+        android:id="@+id/screen_id1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_margin="10dp"
+        android:layout_below="@+id/screen_id1"
+        android:id="@+id/screen_id2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#9933ff"
+        />
+        <ListView
+            android:layout_below="@+id/screen_id1"
+            android:id="@+id/listView1"
+            android:layout_marginTop="20dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnprev1"
+        android:text="PREV"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnprev1"
+        android:id="@+id/btnnext1"
+        android:text="NEXT"
+        android:textColor="#ffffff"
+        android:background="#00cc00"
+        android:layout_alignParentBottom="true"
+        />
+    </RelativeLayout>
+
+
+    <!--VISIBLIITY 3-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl3"
+        android:visibility="invisible"
+        >
+
+
+
+
+
+    <TextView
+        android:text="What type of waxing?"
+        android:layout_width="wrap_content"
+        android:id="@+id/screen_id31"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_margin="10dp"
+        android:layout_below="@+id/screen_id31"
+        android:id="@+id/screen_id32"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#9933ff"
+        />
+
+        <ListView
+            android:layout_below="@+id/screen_id32"
+            android:id="@+id/lvMain"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnprev31"
+        android:text="PREV"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+       />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnprev31"
+        android:id="@+id/btnnext31"
+        android:text="NEXT"
+        android:textColor="#ffffff"
+        android:background="#00cc00"
+        android:layout_alignParentBottom="true"
+
+        />
+        </RelativeLayout>
+
+    <!--VISIBLIITY 4-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl4"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:text="When would you like to get the service (date and time)?"
+            android:layout_width="wrap_content"
+            android:id="@+id/screen_id41"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_margin="10dp"
+            android:layout_below="@+id/screen_id41"
+            android:id="@+id/screen_id42"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#9933ff"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text41"
+            android:text="Date"
+            android:textSize="15dp"
+            android:layout_below="@+id/screen_id42"
+            android:layout_margin="20dp"
+            />
+        <EditText
+            android:id="@+id/edt41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="01/01/2015"
+            android:layout_below="@+id/text41"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text42"
+            android:text="Time"
+            android:textSize="15dp"
+            android:layout_below="@+id/edt41"
+            android:layout_margin="20dp"
+            />
+        <EditText
+            android:id="@+id/edt42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="04:09 PM"
+            android:layout_below="@+id/text42"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnprev41"
+            android:text="PREV"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnprev41"
+            android:id="@+id/btnnext41"
+            android:text="NEXT"
+            android:textColor="#ffffff"
+            android:background="#00cc00"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <!--VISIBLIITY 5-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl5"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:text="Where are you located ?"
+            android:layout_width="wrap_content"
+            android:id="@+id/screen_id51"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_margin="10dp"
+            android:layout_below="@+id/screen_id51"
+            android:id="@+id/screen_id52"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#9933ff"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text51"
+            android:text="Enter your Locality"
+            android:textStyle="bold"
+            android:layout_below="@+id/screen_id52"
+            android:layout_margin="20dp"
+            />
+        <EditText
+            android:id="@+id/edt51"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g, MG Road ,Bangalore "
+            android:layout_below="@+id/text51"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text52"
+            android:text="Enter your street address"
+            android:textStyle="bold"
+            android:layout_below="@+id/edt51"
+            android:layout_margin="20dp"
+            />
+        <EditText
+            android:id="@+id/edt52"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g, A-52 Green Garden "
+            android:layout_below="@+id/text52"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnprev51"
+            android:text="PREV"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnprev51"
+            android:id="@+id/btnnext51"
+            android:text="NEXT"
+            android:textColor="#ffffff"
+            android:background="#00cc00"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <!--VISIBLIITY 6-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl6"
+        android:visibility="invisible"
+        >
+        <TextView
+            android:text="Pricing Details:"
+            android:layout_width="wrap_content"
+            android:id="@+id/screen_id61"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_margin="10dp"
+            android:layout_below="@+id/screen_id61"
+            android:id="@+id/screen_id62"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#9933ff"
+            />
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id = "@+id/RHE"
+            android:layout_below="@+id/screen_id62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="5dp">
+
+            <TableRow android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/runLabel"
+                    android:text="Title"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/hitLabel"
+                    android:text="Service"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/errorLabel"
+                    android:text="Price(Rs)"
+                    android:layout_height="wrap_content"
+                    />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/visitorRuns"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/visitorHits"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/visitorErrors"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/homeRuns"
+                    android:text=""
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/homeHits"
+                    android:text="Total"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/homeErrors"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I acccept terms of use and privacy policy"
+            android:textSize="12dp"
+            android:layout_above="@+id/btnprev61"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:background="#ffffff"
+            />
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnprev61"
+            android:text="PREV"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnprev61"
+            android:id="@+id/btnnext61"
+            android:text="SUBMIT REQUEST"
+            android:textColor="#ffffff"
+            android:background="#00cc00"
+            android:layout_alignParentBottom="true"
+            />
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
